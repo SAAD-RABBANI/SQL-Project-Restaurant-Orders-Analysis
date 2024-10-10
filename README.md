@@ -15,11 +15,15 @@ SELECT COUNT(*) FROM menu_items;
 ```
 2. What are the least and most expensive items on the menu?
 ```sql
+-- Least Expensive
 SELECT * FROM menu_items
-ORDER BY price;
+ORDER BY price
+LIMIT 5;
 
+-- Most Expensive
 SELECT * FROM menu_items
-ORDER BY price DESC;
+ORDER BY price DESC
+LIMIT 5;
 ```
 3. How many Italian dishes are on the menu?
 ```sql
